@@ -11,12 +11,16 @@ export const Navbar = () => {
   return (
     <div className="navbar fixed left-0 top-0 w-full z-10 ease-in duration-300">
       <div className="flex-1">
-      <h1 className="font-bold text-4xl">Pentcloud</h1>
+      <Link href='/'>
+          <h1 className='font-bold text-4xl'>
+            Pentcloud
+          </h1>
+        </Link>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal hidden sm:flex">
           <li className="p-4">
-            <Link href="/home">Home</Link>
+            <Link href="/">Home</Link>
           </li>
           <li className="p-4">
             <Link href="/about">About</Link>
@@ -43,7 +47,7 @@ export const Navbar = () => {
         >
           <ul>
             <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href="/home">Home</Link>
+              <Link href="/">Home</Link>
             </li>
             <li className="p-4 text-4xl hover:text-gray-500">
               <Link href="/about">About</Link>
