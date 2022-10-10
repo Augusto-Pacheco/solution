@@ -29,21 +29,33 @@ export const Navbar = () => {
           </li>
         </ul>
 
-        {/* mobile button
+        {/* mobile button*/}
         <div onClick={handleNav} className='block sm:hidden z-10'>
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
-        </div> */}
+        </div> 
         {/* Mobile Menu */}
-        <div className="dropdown">
-      <label tabIndex={0} className="btn btn-ghost btn-square sm:hidden z-10">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-      </label>
-      <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-        <li><a>Homepage</a></li>
-        <li><a>Portfolio</a></li>
-        <li><a>About</a></li>
-      </ul>
-    </div>
+        <div
+          className={
+            nav
+              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+          }
+        >
+          <ul>
+            <li className="p-4 text-4xl hover:text-gray-500">
+              <Link href="/home">Home</Link>
+            </li>
+            <li className="p-4 text-4xl hover:text-gray-500">
+              <Link href="/about">About</Link>
+            </li>
+            <li className="p-4 text-4xl hover:text-gray-500">
+              <Link href="/services">Services</Link>
+            </li>
+            <li className="p-4 text-4xl hover:text-gray-500">
+              <Link href="/contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
