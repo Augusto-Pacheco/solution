@@ -5,19 +5,18 @@ import GET_AUTHORS from '../graphql/getAuthors';
 
 
 const Author = () => {
-    const result = useQuery(GET_AUTHORS);
-    const {data, error, loading} = useQuery(GET_AUTHORS);
+    const {loading, error, data} = useQuery(GET_AUTHORS);
 
-    console.log(result);
+    console.log(data);
 
   if (loading) return <p>loading...</p>
   if (error) return <p>"Error... ${error.message}"</p>
   
     return (
     <Fragment>
-        {data.posts.map((author) =>(
-            <div key={author.lenght}>
-                {author.rows.title} - {author.pages}
+        {data.posts.map((posts) =>(
+            <div key={posts.lenght}>
+                {posts.rows.title} - {author.pages}
             </div>
         ))}
     </Fragment>
