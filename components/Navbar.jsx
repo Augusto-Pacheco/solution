@@ -13,7 +13,7 @@ export const Navbar = () => {
       <div className="flex-1">
       <Link href='/'>
           <h1 className='font-bold text-4xl'>
-            Pentcloud
+            Augusto
           </h1>
         </Link>
       </div>

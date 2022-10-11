@@ -5,8 +5,7 @@ import { Hero } from '../components/Hero'
   return (
     <div className='flex items-center justify-left h-screen mb-12 bg-fixed bg-center bg-cover custom-img text-2xl text-white'>
       
-      
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio itaque, unde odio assumenda adipisci molestiae quia rem ratione nostrum cum modi et pariatur iure, cumque repellendus harum voluptas dolorum fugit?
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eaque consequatur nostrum autem facilis tenetur quod nam saepe accusamus dolores neque, doloremque ratione cupiditate! Modi repellendus maiores ad eaque quis.</p>
     </div>
     
   )
